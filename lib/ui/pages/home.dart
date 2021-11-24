@@ -27,7 +27,7 @@ class HomePage extends StatelessWidget {
         child: ListView.builder(
           itemCount: avengerInf.enemiesPic.length,
           itemBuilder: (context, index) {
-            return card_enemies(name: avengerInf.enemies[index], pic: avengerInf.enemiesPic[index]);
+            return card_enemies(avenger: avengerInf.avengers[index], enemy: avengerInf.enemies[index], pic: avengerInf.enemiesPic[index]);
           }
           ),
         ),
